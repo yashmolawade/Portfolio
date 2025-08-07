@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   };
 
   const handleResumeClick = () => {
-    window.open("/Yash_Molawade_Resume.pdf", "_blank");
+     window.open("/Portfolio/Yash_Molawade_Resume.pdf", "_blank");
   };
 
   return (

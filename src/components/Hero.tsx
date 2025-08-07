@@ -9,6 +9,8 @@ import {
   Sparkles,
 } from "lucide-react";
 
+import YashImg from "../assests/Yash.png"
+
 const Hero: React.FC = () => {
   const handleResumeDownload = () => {
     window.open("/Yash_Molawade_Resume.pdf", "_blank");
@@ -137,7 +139,7 @@ const Hero: React.FC = () => {
                   <div className="w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 flex items-center justify-center">
                     {/* If image is not available <Code size={120} className="text-gray-400 dark:text-gray-500" />  */}
                     <img
-                      src="/Yash.png"
+                      src={YashImg}
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />

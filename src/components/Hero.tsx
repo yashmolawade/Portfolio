@@ -9,11 +9,11 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import YashImg from "../assests/Yash.png"
-
+import YashImg from "../assets/Yash.png"
+import resumePDF from "../assets/Yash_Molawade_Resume.pdf";
 const Hero: React.FC = () => {
   const handleResumeDownload = () => {
-    window.open("/Yash_Molawade_Resume.pdf", "_blank");
+    window.open(resumePDF, "_blank");
   };
 
   return (

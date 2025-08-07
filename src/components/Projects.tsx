@@ -1,5 +1,9 @@
 import React from 'react';
 import { ExternalLink, Github, } from 'lucide-react';
+import LandingPageLearnQuest from "../assets/LeanQuest/LandingPage.png"
+import LandingPageLetsChat1 from "../assets/LetsChat/LetsChat1.png"
+import LandingPageMasaiPe from "../assets/MasaiPe/AdminDash.png"
+import LandingPageTravelBuddy from "../assets/TravelBuddy/LandingPage.png"
 
 const Projects: React.FC = () => {
   const projects = [
@@ -7,7 +11,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: 'Lets Chat',
       description: ' 💬 Lets Chat is a real-time chat application built for seamless one-on-one communication. It features secure email/password authentication, a clean user interface, support for emojis and images, dark mode, and a unique view-once message option for added privacy. Designed with simplicity and clarity in mind, it\'s ideal for direct conversations',
-      image: '/LetsChat/LetsChat1.png',
+      image: LandingPageLetsChat1,
       technologies: ['React', 'Tailwind CSS','Socket.IO', 'MongoDB', 'Node.js', ' Express.js', ] ,
       githubUrl: 'https://github.com/yashmolawade/LetsChat',
       liveUrl: 'https://letschat-1-mnk2.onrender.com/',
@@ -17,7 +21,7 @@ const Projects: React.FC = () => {
       id: 2,
       title: 'Travel Buddy',
       description: '🌍 Travel Budget Planning Tool An intuitive and user-friendly web application designed to help travelers track expenses, set budget goals, and analyze spending patterns during their trips. Built with responsiveness and collaboration in mind, this tool empowers users to make smarter financial decisions while exploring the world stress-free.',
-      image: '/TravelBuddy/LandingPage.png',
+      image: LandingPageTravelBuddy,
       technologies: ['React', 'Redux', 'JavaScript','Tailwind CSS', 'Firebase'],
       githubUrl: 'https://github.com/yashmolawade/TravelBudgetPlanningTool',
       liveUrl: 'https://travel-budget-planning-tool-five.vercel.app/',
@@ -27,7 +31,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: 'MasaiPe',
       description: '💰 Payout Automation System for EdTech Mentors A secure, flexible, and auditable platform to automate payouts for mentors, instructors, and evaluators in EdTech organizations. Streamlines session tracking, payout calculations, tax handling, receipt generation, and communication — all in one place.',
-      image: '/MasaiPe/AdminDash.png',
+      image: LandingPageMasaiPe,
       technologies: ['React', 'JavaScript','Tailwind CSS','Redux', 'Firebase'],
       githubUrl: 'https://github.com/yashmolawade/masaipe',
       liveUrl: 'https://masaipe.vercel.app/',
@@ -37,7 +41,7 @@ const Projects: React.FC = () => {
       id: 4,
       title: 'Learn Quest',
       description: '🧠 QuizMaster is a gamified quiz web app using HTML, CSS, and JS. Users take trivia quizzes, earn points, unlock badges (Bronze, Silver, Gold), and receive trophies for top scores. Firebase handles authentication and saves achievements. Features live feedback and animations.',
-      image: '/LeanQuest/LandingPage.png',
+      image: LandingPageLearnQuest,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       githubUrl: 'https://github.com/yashmolawade/LearnQuest',
       liveUrl: 'https://learn-questt.netlify.app/',

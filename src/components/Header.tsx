@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download, Home, User, Code, Briefcase, Mail, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
-import resumePDF from "../assets/Yash_Molawade_Resume.pdf";
 
 interface HeaderProps {
   activeSection: string;
@@ -37,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   };
 
   const handleResumeClick = () => {
-    window.open(resumePDF, '_blank');
+    window.open("/Yash_Molawade_Resume.pdf", "_blank");
   };
 
   return (

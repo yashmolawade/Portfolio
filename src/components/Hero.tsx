@@ -13,7 +13,7 @@ import YashImg from "../assets/Yash.png"
 
 const Hero: React.FC = () => {
   const handleResumeDownload = () => {
-    window.open("/Yash_Molawade_Resume.pdf", "_blank");
+    window.open("/Portfolio/Yash_Molawade_Resume.pdf", "_blank");
   };
 
   return (

@@ -9,11 +9,18 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import YashImg from "../assets/Yash.png"
+import YashImg from "../assets/Yash.png";
 
 const Hero: React.FC = () => {
   const handleResumeDownload = () => {
-    window.open("/Portfolio/Yash_Molawade_Resume.pdf", "_blank");
+    const resumeUrl = `${import.meta.env.BASE_URL}Yash_Molawade_Resume.pdf`;
+    window.open(resumeUrl, "_blank");
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Yash_Molawade_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (

@@ -131,7 +131,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Profile Image with 3D Effect */}
-          <div className="flex justify-center lg:justify-end lg:max-w-[18rem] xl:max-w-[30rem] w-full">
+          <div className="flex justify-center lg:justify-end lg:max-w-[27rem] xl:max-w-[34rem] w-full">
             <div className="relative group">
               {/* 3D Container */}
               <div className="relative transform-gpu transition-all duration-500 group-hover:scale-105 group-hover:rotate-2">

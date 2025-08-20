@@ -13,14 +13,14 @@ import YashImg from "../assets/Yash.png";
 
 const Hero: React.FC = () => {
   const handleResumeDownload = () => {
-    const resumeUrl = `${import.meta.env.BASE_URL}Yash_Molawade_Resume.pdf`;
-    window.open(resumeUrl, "_blank");
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "Yash_Molawade_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const resumeUrl = "/Portfolio/Yash_Molawade_Resume.pdf";
+    window.open(resumeUrl, "_blank", "noopener,noreferrer");
+    const anchorElement = document.createElement("a");
+    anchorElement.href = resumeUrl;
+    anchorElement.download = "Yash_Molawade_Resume.pdf";
+    document.body.appendChild(anchorElement);
+    anchorElement.click();
+    document.body.removeChild(anchorElement);
   };
 
   return (
